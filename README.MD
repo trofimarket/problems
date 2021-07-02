@@ -8,22 +8,19 @@ The contribution policy we follow is the [Collective Code Construction Contract 
 If you're wondering why any of the rules in the C4 are there, take a look at the [line by line explanation](/DESCRIPTIVE_C4.MD) of everything in the C4, this explains the rationale and history behind everything in the protocol and makes it easier to understand.
 
 
-<details>
-  <summary>Step-by-step guide to sending a pull request</summary>
-<p>
-  
-  
-**It is important to claim the issue you want to work on so that others don't work on the same thing. Make a comment in the issue: `I'm claiming this issue to work on it` before you start working on the issue. Or if you're an existing Contributor and can assign yourself to the issue, do that instead.**
+## Step-by-step guide to sending a pull request  
+#### Claim the issue you want to work on so that others don't work on the same thing.
+Make a comment in the issue: `I'm claiming this issue to work on it` before you start working on the issue. Or if you're an existing Contributor and can assign yourself to the issue, do that instead.
 
 If at some point you want to abandon the issue and let someone else have a go, let everyone know by unassigning yourself and/or commenting appropriately. If you claim an issue and do not send a pull request within 24 hours a Maintainer MAY remove you from the issue and let someone else claim it.
 
 0. Read the [contribution protocol](/CONTRIBUTING.MD) and the [line by line explanation](/DESCRIPTIVE_C4.MD) of the protocol.
-1. Fork this github repository under your own github account.
+1. Using GitHub, fork the repository you want to work on.
 2. Clone _your_ fork locally on your development machine.
-3. Choose _one_ problem to solve. If you aren't solving a problem that's already in the issue tracker you should describe the problem there (and your idea of the solution) first to see if anyone else has something to say about it (maybe someone is already working on a solution, or maybe you're doing somthing wrong).
-4. Add the repository you are working on as an upstream source and pull any changes:
+3. Choose _one_ problem to solve. If it's your first issue it's usually a good idea to simply choose the lowest hanging fruit - whatever looks easiest to solve in the shorterst amount of time.  Note: If you aren't solving a problem that's already in the issue tracker you should describe the problem there (and your idea of the solution) first to see if anyone else has something to say about it (maybe someone is already working on a solution, or maybe you're doing somthing wrong).
+5. Add the repository you are working on as an upstream source and pull any changes:
 ```
-@: git remote add upstream git://github.com/trofimarket/contracts //only needs to be done once
+@: git remote add upstream git://github.com/trofimarket/contracts //apply to whatever repo you are working on, only needs to be done once
 @: git checkout master //just to make sure you're on the correct branch
 @: git pull upstream master //this grabs any code that has changed, you want to be working on the latest HEAD
 @: git push //update your remote fork with the changes you just pulled from upstream master
@@ -39,7 +36,7 @@ If **not**, you need to pull the latest changes from the upstream repository and
 @: git checkout master
 @: git pull upstream master
 @: git push
-@: git checkout -b local_branch_name //from step 5
+@: git checkout -b branch_name //from step 5
 @: git stash pop //_replay_ your work on the new branch which is now fully up to date with the Blockrazor repository
 ```
 
