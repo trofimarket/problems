@@ -8,13 +8,14 @@ The contribution policy we follow is the [Collective Code Construction Contract 
 If you're wondering why any of the rules in the C4 are there, take a look at the [line by line explanation](/DESCRIPTIVE_C4.MD) of everything in the C4, this explains the rationale and history behind everything in the protocol and makes it easier to understand.
 
 
-## Step-by-step guide to sending a pull request  
+## Step-by-step guide to contributing
+Read the [contribution protocol](/CONTRIBUTING.MD) and the [line by line explanation](/DESCRIPTIVE_C4.MD) of the protocol. What follows here is a quickstart guide only. If your pull request does not comply with the protocol, it cannot be merged.
 #### Claim the issue you want to work on so that others don't work on the same thing.
 Make a comment in the issue: `I'm claiming this issue to work on it` before you start working on the issue. Or if you're an existing Contributor and can assign yourself to the issue, do that instead.
 
 If at some point you want to abandon the issue and let someone else have a go, let everyone know by unassigning yourself and/or commenting appropriately. If you claim an issue and do not send a pull request within 24 hours a Maintainer MAY remove you from the issue and let someone else claim it.
 
-0. Read the [contribution protocol](/CONTRIBUTING.MD) and the [line by line explanation](/DESCRIPTIVE_C4.MD) of the protocol.
+#### Fork => Pull 
 1. Using GitHub, fork the repository you want to work on.
 2. Clone _your_ fork locally on your development machine.
 3. Choose _one_ problem to solve. If it's your first issue it's usually a good idea to simply choose the lowest hanging fruit - whatever looks easiest to solve in the shorterst amount of time.  Note: If you aren't solving a problem that's already in the issue tracker you should describe the problem there (and your idea of the solution) first to see if anyone else has something to say about it (maybe someone is already working on a solution, or maybe you're doing somthing wrong).
@@ -70,10 +71,7 @@ If you want to work on another problem while you are waiting for it to merge sim
 @: git checkout master
 ```
 
-  
-  <details>
-  <summary>Can I be paid to contribute to TroFi?</summary>
-<p>
+## Can I be paid to contribute to TroFi?
 
 Yes, this is sometimes possible.
 
@@ -85,12 +83,7 @@ It's usually worth following any repositories you are working on to get notified
 
 Contact TroFi's BDFL (Benevolent Dictator For Life): excessionatesperi@protonmail.com if you've been contributing code to TroFi and want to keep doing it but you need money.
 
-</p>
-</details>
-
-<details>
-  <summary>Rules for paid contributors</summary>
-<p>
+### Rules for paid contributors
 
 0. Write tests for your code so that people don't break it later.
 
@@ -100,5 +93,3 @@ Contact TroFi's BDFL (Benevolent Dictator For Life): excessionatesperi@protonmai
 
 3. Your pull requests should be a glowing example to others of how to work with the C4. Each one should be a model that others can refer to. If they aren't you probably won't be getting paid for it.
   
-</p>
-</details>
