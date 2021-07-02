@@ -72,3 +72,36 @@ If you want to work on another problem while you are waiting for it to merge sim
 ```
 @: git checkout master
 ```
+
+  
+  <details>
+  <summary>Can I be paid to contribute to TroFi?</summary>
+<p>
+
+Yes, this is sometimes possible.
+
+Your first step is to _very carefully read and understand everything above_, then start fixing problems and sending pull requests!
+
+If your code is amazing and brilliant and you're some kind of rockstar but you fail to follow the contribution protocol, your pull requests will not be merged and you will not be paid.
+
+It's usually worth following any repositories you are working on to get notified of pull requests and new issues.
+
+Contact TroFi's BDFL (Benevolent Dictator For Life): excessionatesperi@protonmail.com if you've been contributing code to TroFi and want to keep doing it but you need money.
+
+</p>
+</details>
+
+<details>
+  <summary>Rules for paid contributors</summary>
+<p>
+
+0. Write tests for your code so that people don't break it later.
+
+1. Engage in discussion about problems even if you aren't working on them yourself. Be helpful to other contributors, some may be volunteers who just want to be part of the project. You (should) have a pretty good understanding of the codebase and can probably save others a lot of time.
+
+2. Your code should be _very_ well commented and easy to read. It should be immediately clear what your code is doing. You should be able to look at your code a year later, in the morning before coffee, and immediately know what it's doing. A good mindset to adopt is to write code and comments like you're teaching someone how to code.
+
+3. Your pull requests should be a glowing example to others of how to work with the C4. Each one should be a model that others can refer to. If they aren't you probably won't be getting paid for it.
+  
+</p>
+</details>
