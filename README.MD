@@ -3,13 +3,15 @@
 All problems added to the issue tracker SHOULD follow the C4 Protocol.
 
 ## Contributing to TroFi    
-The contribution policy we follow is the [Collective Code Construction Contract (C4)](/CONTRIBUTING.MD)    
+The contribution policy we follow is the [Collective Code Construction Contract (C4)](https://rfc.zeromq.org/spec/42/)    
 
-If you're wondering why any of the rules in the C4 are there, take a look at the [line by line explanation](/DESCRIPTIVE_C4.MD) of everything in the C4, this explains the rationale and history behind everything in the protocol and makes it easier to understand.
+If you're wondering why any of the rules in the C4 are there, take a look at the [line by line explanation](https://zguide.zeromq.org/docs/chapter6/#The-ZeroMQ-Process-C) of everything in the C4, this explains the rationale and history behind everything in the protocol and makes it easier to understand.
+
+If your pull request does not comply with the protocol, it probably won't be merged.
 
 
 ## Step-by-step guide to contributing
-Read the [contribution protocol](/CONTRIBUTING.MD) and the [line by line explanation](/DESCRIPTIVE_C4.MD) of the protocol. What follows here is a quickstart guide only. If your pull request does not comply with the protocol, it cannot be merged.
+What follows here is a quickstart guide only, if carefully followed carefully and accurately, it will guide you to producing a valid patch as defined by the C4 protocol. However to understand why each step is required, read the full protocol.
 #### Claim the issue you want to work on so that others don't work on the same thing.
 Make a comment in the issue: `I'm claiming this issue to work on it` before you start working on the issue. Or if you're an existing Contributor and can assign yourself to the issue, do that instead.
 
