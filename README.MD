@@ -38,7 +38,7 @@ If **not**, you need to pull the latest changes from the upstream repository and
 @: git pull upstream master
 @: git push
 @: git checkout -b branch_name //from step 5
-@: git stash pop //_replay_ your work on the new branch which is now fully up to date with the Blockrazor repository
+@: git stash pop //_replay_ your work on the new branch which is now fully up to date with the upstream repository
 ```
 
 Note: after running `git stash pop` you should run any tests, check that everything compiles properly, etc, and look over your code again and check that everything still works as sometimes a file you worked on was changed in the meantime, breaking one of your changes.
