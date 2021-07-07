@@ -1,5 +1,8 @@
 # TroFi Problem Tracker
 
+### Quick links:
+https://trofi.one is the production server. This serves the frontend. There are no backend operations as these are all handled using IPFS, web3 integration, and the graph for query caching and indexing. The production server pulls and rebuilds the frontend client whenever a pull request is merged.
+
 All problems added to the issue tracker SHOULD follow the C4 Protocol.
 
 ## Contributing to TroFi    
