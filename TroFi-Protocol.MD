@@ -10,17 +10,19 @@ In order to be considered for approval, a MERCHANT should complete their profile
 * Their proposed platform tax, calculated as a percentage of the final sale price (SC)
 * A list of social media accounts and posts proving ownership of these accounts (IPFS)
 * Examples of the types of items they propose to sell through the TroFi Market (IPFS)
-* A government issued company registration certificate (IPFS)
-* A signed letter from the director of the company requesting the shareholders to approve the application (IPFS)
+* A government issued company registration certificate if they are a company, or a profile picture of themselves if they are an independent artist (IPFS) 
+* A signed letter from the director of the company (if they are a company) requesting the shareholders to approve the application (IPFS)
+* A contact email address, must be @ their company domain if it's a company
 
 SHAREHOLDERS may then vote on approving the MERCHANT profile (>50% of shareholders must vote YES, and 0% must vote NO). If approved, the MERCHANT then has privileges to create new AUCTIONs.
 
 ### AUCTION creation:
 * MERCHANT takes very detailed pictures (videos can also be used) of the item, along with any original documentation, box, receipts, etc (IPFS)
-* MERCHANT uses the PNFT Market frontend to produce a Markdown document explaining the history and details of the item, including pictures etc from IPFS (IPFS)
+* MERCHANT uses the TroFi Market frontend to produce a Markdown document explaining the history and details of the item, including pictures etc from IPFS (IPFS)
 * MERCHANT sets the toptime for the auction. This is how long a bid must remain the top bid in order to win the auction.
-* MERCHANT must specify a Bitcoin address for final settlement.
+* MERCHANT must specify a Bitcoin, Ethereum, or contract native (BSC?) address for final settlement.
 * MERCHANT launches the AUCTION, pushing it to the TroFi contract. The listing fee is deducted from their wallet.
+* MERCHANT specifies a single global shipping + insurance price in USD, and a 1 year storage cost in USD in their listing.
 
 ### AUCTION process:
 * BIDDERs can bid on the auction through the website by using Metamask.
@@ -30,13 +32,13 @@ SHAREHOLDERS may then vote on approving the MERCHANT profile (>50% of shareholde
   * E.g. if the MERCHANT has a platform tax of 1%, and the user wants to bid 1 BTC, they need to lock 0.001BTC (or equivalent in other currencies). 
 * The locked coins are unlocked and returned to the bidder if someone else outbids them.
 * If the BIDDER remains the top bidder for the *toptime*, they have won the auction. The deposit is *not* returned to the bidder.
-* When the AUCTION is completed (a BIDDER wins the auction), they have 24 hours to settle the final payment to the MERCHANT's address (either on the BTC chain, or BSC chain). Failure to do so means the merchant can restart the auction and the bidder loses their deposit. 
+* When the AUCTION is completed (a BIDDER wins the auction), they have 24 hours to settle the final payment to the MERCHANT's address (BTC/ETH/BSC). Failure to do so means the merchant can restart the auction and the bidder loses their deposit. 
 * The MERCHANT releases ownership of the PNFT to the winner upon recieving final settlement.
 * The winning BIDDER then owns the PNFT. 
 
 #### After the AUCTION has ended:
-* The winner of the auction can request that the physical asset be shipped to them. The winner of the auction may choose the shipping method, insurance, etc and must pay for it.
-* Alternatively, the winner of the auction may choose to let the MERCHANT retain the physical item so that it can be re-auctioned again at a later date.
+* The winner of the auction can request that the physical asset be shipped to them, or that it be stored by the merchant. 
+* If the asset is shipped to the auction winner, the NFT status must be updated as no longer being in the custody of the merchant
 
 #### Re-Auctioning of items
 * The winner of the auction may only re-auction the item if the physical asset is in the custody of an approved MERCHANT. 
@@ -46,7 +48,7 @@ SHAREHOLDERS may then vote on approving the MERCHANT profile (>50% of shareholde
 ### Fixed Price Listings:
 * MERCHANT’s can create a fixed price listing, denominated in BTC. The winner of a fixed price listing is simply the first one to buy it.
 * MERCHANTS can delete their fixed price listings at any time.
-* Shipping cost must be built into the price by the merchant.
+* Global shipping and insurance cost must be built into the price by the merchant.
 
 ### Valid tokens for bidding and settlement
 #### Bidding (BSC)
@@ -65,7 +67,7 @@ SHAREHOLDERS may then vote on approving the MERCHANT profile (>50% of shareholde
 
 ### TroFi Shares:
 * SHAREHOLDERs are anyone who holds TroFi governance shares/tokens. 
-* All profit (platform tax, and listing fee) of the PNFT Market is sent to SHAREHOLDERs, in proportion to the number of TroFi shares they own.
+* All profit (platform tax, and listing fee) of the TroFi Market is sent to SHAREHOLDERs, in proportion to the number of TroFi shares they own.
 * 1,000,000 shares are initially created
 * All future creation of shares must be approved by 90% of current shareholders
 
